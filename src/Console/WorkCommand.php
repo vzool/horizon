@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Vzool\Horizon\Console;
 
 use Illuminate\Queue\Console\WorkCommand as BaseWorkCommand;
 

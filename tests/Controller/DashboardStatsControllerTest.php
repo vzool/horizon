@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller;
+namespace Vzool\Horizon\Tests\Controller;
 
 use Mockery;
-use Laravel\Horizon\WaitTimeCalculator;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\Contracts\MetricsRepository;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Vzool\Horizon\WaitTimeCalculator;
+use Vzool\Horizon\Contracts\JobRepository;
+use Vzool\Horizon\Contracts\MetricsRepository;
+use Vzool\Horizon\Contracts\SupervisorRepository;
+use Vzool\Horizon\Contracts\MasterSupervisorRepository;
 
 class DashboardStatsControllerTest extends AbstractControllerTest
 {

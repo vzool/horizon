@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fakes;
+namespace Vzool\Horizon\Tests\Feature\Fakes;
 
-use Laravel\Horizon\Supervisor;
+use Vzool\Horizon\Supervisor;
 
 class SupervisorWithFakeExit extends Supervisor
 {

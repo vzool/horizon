@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Controller;
+namespace Vzool\Horizon\Tests\Controller;
 
-use Laravel\Horizon\Horizon;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Horizon;
+use Vzool\Horizon\Tests\IntegrationTest;
 
 abstract class AbstractControllerTest extends IntegrationTest
 {

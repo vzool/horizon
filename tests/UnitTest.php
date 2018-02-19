@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests;
+namespace Vzool\Horizon\Tests;
 
 use Mockery;
 use PHPUnit\Framework\TestCase;

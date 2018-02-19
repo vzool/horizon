@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 use ArrayAccess;
 use Illuminate\Support\Arr;

@@ -1,14 +1,14 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\WorkerProcess;
+use Vzool\Horizon\WorkerProcess;
 use Illuminate\Support\Facades\Event;
 use Symfony\Component\Process\Process;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Events\UnableToLaunchProcess;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Events\UnableToLaunchProcess;
+use Vzool\Horizon\Events\WorkerProcessRestarting;
 
 class WorkerProcessTest extends IntegrationTest
 {

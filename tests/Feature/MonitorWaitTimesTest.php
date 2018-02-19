@@ -1,17 +1,17 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
 use Mockery;
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\Supervisor;
+use Vzool\Horizon\Supervisor;
 use Illuminate\Support\Facades\Event;
-use Laravel\Horizon\WaitTimeCalculator;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Events\LongWaitDetected;
-use Laravel\Horizon\Events\SupervisorLooped;
-use Laravel\Horizon\Listeners\MonitorWaitTimes;
-use Laravel\Horizon\Contracts\MetricsRepository;
+use Vzool\Horizon\WaitTimeCalculator;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Events\LongWaitDetected;
+use Vzool\Horizon\Events\SupervisorLooped;
+use Vzool\Horizon\Listeners\MonitorWaitTimes;
+use Vzool\Horizon\Contracts\MetricsRepository;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 
 class MonitorWaitTimesTest extends IntegrationTest

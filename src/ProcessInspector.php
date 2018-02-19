@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Vzool\Horizon\Contracts\SupervisorRepository;
+use Vzool\Horizon\Contracts\MasterSupervisorRepository;
 
 class ProcessInspector
 {
     /**
      * The command executor.
      *
-     * @var \Laravel\Horizon\Exec
+     * @var \Vzool\Horizon\Exec
      */
     public $exec;
 
     /**
      * Create a new process inspector instance.
      *
-     * @param  \Laravel\Horizon\Exec  $exec
+     * @param  \Vzool\Horizon\Exec  $exec
      * @return void
      */
     public function __construct(Exec $exec)

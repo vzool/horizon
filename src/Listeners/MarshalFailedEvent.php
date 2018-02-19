@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Vzool\Horizon\Listeners;
 
 use Illuminate\Queue\Jobs\RedisJob;
-use Laravel\Horizon\Events\JobFailed;
+use Vzool\Horizon\Events\JobFailed;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\Events\JobFailed as LaravelJobFailed;
 

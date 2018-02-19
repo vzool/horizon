@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fixtures;
+namespace Vzool\Horizon\Tests\Feature\Fixtures;
 
-use Laravel\Horizon\Tests\Feature\Fakes\SupervisorWithFakeMonitor;
+use Vzool\Horizon\Tests\Feature\Fakes\SupervisorWithFakeMonitor;
 
 class FakeSupervisorFactory
 {

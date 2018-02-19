@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\JobId;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\JobId;
+use Vzool\Horizon\Tests\IntegrationTest;
 use Laravel\Facades\Config;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Horizon;
+use Vzool\Horizon\Horizon;
 
 class PrefixTest extends IntegrationTest
 {

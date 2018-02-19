@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 class QueueCommandString
 {
     /**
      * Get the additional option string for the command.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Vzool\Horizon\SupervisorOptions  $options
      * @param  bool  $paused
      * @return string
      */

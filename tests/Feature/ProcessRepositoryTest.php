@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\ProcessRepository;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Contracts\ProcessRepository;
 
 class ProcessRepositoryTest extends IntegrationTest
 {

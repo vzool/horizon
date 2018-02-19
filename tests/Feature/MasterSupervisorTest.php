@@ -1,20 +1,20 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
 use Mockery;
-use Laravel\Horizon\PhpBinary;
+use Vzool\Horizon\PhpBinary;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\SupervisorProcess;
-use Laravel\Horizon\WorkerCommandString;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
-use Laravel\Horizon\Tests\Feature\Fixtures\EternalSupervisor;
-use Laravel\Horizon\Tests\Feature\Fixtures\SupervisorProcessWithFakeRestart;
+use Vzool\Horizon\MasterSupervisor;
+use Vzool\Horizon\SupervisorOptions;
+use Vzool\Horizon\SupervisorProcess;
+use Vzool\Horizon\WorkerCommandString;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Contracts\HorizonCommandQueue;
+use Vzool\Horizon\Contracts\MasterSupervisorRepository;
+use Vzool\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Vzool\Horizon\Tests\Feature\Fixtures\EternalSupervisor;
+use Vzool\Horizon\Tests\Feature\Fixtures\SupervisorProcessWithFakeRestart;
 
 class MasterSupervisorTest extends IntegrationTest
 {

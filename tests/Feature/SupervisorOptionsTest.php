@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\SupervisorOptions;
+use Vzool\Horizon\Tests\IntegrationTest;
 
 class SupervisorOptionsTest extends IntegrationTest
 {

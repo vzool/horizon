@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Vzool\Horizon\Events;
 
-use Laravel\Horizon\Notifications\LongWaitDetected as LongWaitDetectedNotification;
+use Vzool\Horizon\Notifications\LongWaitDetected as LongWaitDetectedNotification;
 
 class LongWaitDetected
 {
@@ -45,7 +45,7 @@ class LongWaitDetected
     /**
      * Get a notification representation of the event.
      *
-     * @return \Laravel\Horizon\Notifications\LongWaitDetected
+     * @return \Vzool\Horizon\Notifications\LongWaitDetected
      */
     public function toNotification()
     {

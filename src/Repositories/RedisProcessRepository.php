@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Repositories;
+namespace Vzool\Horizon\Repositories;
 
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\Contracts\ProcessRepository;
+use Vzool\Horizon\Contracts\ProcessRepository;
 use Illuminate\Contracts\Redis\Factory as RedisFactory;
 
 class RedisProcessRepository implements ProcessRepository

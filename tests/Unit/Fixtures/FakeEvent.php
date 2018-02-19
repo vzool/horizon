@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Unit\Fixtures;
+namespace Vzool\Horizon\Tests\Unit\Fixtures;
 
 class FakeEvent
 {

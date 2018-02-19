@@ -1,24 +1,24 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Unit;
+namespace Vzool\Horizon\Tests\Unit;
 
 use Mockery;
 use StdClass;
-use Laravel\Horizon\JobPayload;
-use Laravel\Horizon\Tests\UnitTest;
+use Vzool\Horizon\JobPayload;
+use Vzool\Horizon\Tests\UnitTest;
 use Illuminate\Contracts\Mail\Mailable;
 use Illuminate\Mail\SendQueuedMailable;
 use Illuminate\Events\CallQueuedListener;
 use Illuminate\Broadcasting\BroadcastEvent;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeEvent;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeModel;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeEvent;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeModel;
 use Illuminate\Notifications\SendQueuedNotifications;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeListener;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeEventWithModel;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeJobWithTagsMethod;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentModel;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeListener;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeEventWithModel;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeJobWithTagsMethod;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentModel;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
-use Laravel\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentCollection;
+use Vzool\Horizon\Tests\Unit\Fixtures\FakeJobWithEloquentCollection;
 
 class RedisPayloadTest extends UnitTest
 {

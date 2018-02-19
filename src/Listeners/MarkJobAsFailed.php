@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Vzool\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobFailed;
-use Laravel\Horizon\Contracts\JobRepository;
+use Vzool\Horizon\Events\JobFailed;
+use Vzool\Horizon\Contracts\JobRepository;
 
 class MarkJobAsFailed
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Vzool\Horizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Vzool\Horizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)
@@ -28,7 +28,7 @@ class MarkJobAsFailed
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobFailed  $event
+     * @param  \Vzool\Horizon\Events\JobFailed  $event
      * @return void
      */
     public function handle(JobFailed $event)

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Http\Middleware;
+namespace Vzool\Horizon\Http\Middleware;
 
-use Laravel\Horizon\Horizon;
+use Vzool\Horizon\Horizon;
 
 class Authenticate
 {

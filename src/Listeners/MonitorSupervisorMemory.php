@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Vzool\Horizon\Listeners;
 
-use Laravel\Horizon\Events\SupervisorLooped;
+use Vzool\Horizon\Events\SupervisorLooped;
 
 class MonitorSupervisorMemory
 {
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\SupervisorLooped  $event
+     * @param  \Vzool\Horizon\Events\SupervisorLooped  $event
      * @return void
      */
     public function handle(SupervisorLooped $event)

@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 use Illuminate\Support\Str;
-use Laravel\Horizon\Events\JobPushed;
-use Laravel\Horizon\Events\JobDeleted;
-use Laravel\Horizon\Events\JobReleased;
-use Laravel\Horizon\Events\JobReserved;
-use Laravel\Horizon\Events\JobsMigrated;
+use Vzool\Horizon\Events\JobPushed;
+use Vzool\Horizon\Events\JobDeleted;
+use Vzool\Horizon\Events\JobReleased;
+use Vzool\Horizon\Events\JobReserved;
+use Vzool\Horizon\Events\JobsMigrated;
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Queue\RedisQueue as BaseQueue;
 
