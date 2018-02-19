@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Vzool\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\MetricsRepository;
+use Vzool\Horizon\Contracts\MetricsRepository;
 
 class JobMetricsController extends Controller
 {
     /**
      * The metrics repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\MetricsRepository
+     * @var \Vzool\Horizon\Contracts\MetricsRepository
      */
     public $metrics;
 
     /**
      * Create a new controller instance.
      *
-     * @param  \Laravel\Horizon\Contracts\MetricsRepository  $metrics
+     * @param  \Vzool\Horizon\Contracts\MetricsRepository  $metrics
      * @return void
      */
     public function __construct(MetricsRepository $metrics)

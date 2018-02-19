@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 class WorkerCommandString
 {
@@ -14,7 +14,7 @@ class WorkerCommandString
     /**
      * Get the command-line representation of the options for a worker.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Vzool\Horizon\SupervisorOptions  $options
      * @return string
      */
     public static function fromOptions(SupervisorOptions $options)
@@ -31,7 +31,7 @@ class WorkerCommandString
     /**
      * Get the additional option string for the command.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Vzool\Horizon\SupervisorOptions  $options
      * @return string
      */
     public static function toOptionsString(SupervisorOptions $options)

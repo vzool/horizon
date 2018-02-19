@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Vzool\Horizon\Events;
 
 class JobFailed extends RedisEvent
 {

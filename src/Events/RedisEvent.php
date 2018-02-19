@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Vzool\Horizon\Events;
 
-use Laravel\Horizon\JobPayload;
+use Vzool\Horizon\JobPayload;
 
 class RedisEvent
 {

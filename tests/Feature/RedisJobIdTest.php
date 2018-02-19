@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\JobId;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\JobId;
+use Vzool\Horizon\Tests\IntegrationTest;
 
 class JobIdTest extends IntegrationTest
 {

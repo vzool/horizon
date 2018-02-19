@@ -1,6 +1,6 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Jobs;
+namespace Vzool\Horizon\Tests\Feature\Jobs;
 
 use Illuminate\Queue\InteractsWithQueue;
 

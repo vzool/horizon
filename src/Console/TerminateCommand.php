@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Vzool\Horizon\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Laravel\Horizon\MasterSupervisor;
 use Illuminate\Support\InteractsWithTime;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Vzool\Horizon\MasterSupervisor;
+use Vzool\Horizon\Contracts\MasterSupervisorRepository;
 
 class TerminateCommand extends Command
 {

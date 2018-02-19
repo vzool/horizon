@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Vzool\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Http\Middleware\Authenticate;
+use Vzool\Horizon\Http\Middleware\Authenticate;
 use Illuminate\Routing\Controller as BaseController;
 
 class Controller extends BaseController

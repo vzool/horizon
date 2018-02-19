@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Vzool\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Jobs\RetryFailedJob;
+use Vzool\Horizon\Jobs\RetryFailedJob;
 
 class RetryController extends Controller
 {

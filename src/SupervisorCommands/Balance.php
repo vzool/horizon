@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\SupervisorCommands;
+namespace Vzool\Horizon\SupervisorCommands;
 
-use Laravel\Horizon\Supervisor;
+use Vzool\Horizon\Supervisor;
 
 class Balance
 {
     /**
      * Process the command.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Vzool\Horizon\Supervisor  $supervisor
      * @param  array  $options
      * @return void
      */

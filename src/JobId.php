@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
-use Laravel\Horizon\Contracts\JobRepository;
+use Vzool\Horizon\Contracts\JobRepository;
 
 class JobId
 {

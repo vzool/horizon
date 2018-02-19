@@ -1,11 +1,11 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Vzool\Horizon\Contracts\HorizonCommandQueue;
+use Vzool\Horizon\MasterSupervisorCommands\AddSupervisor;
 
 class ProvisioningPlan
 {
@@ -101,7 +101,7 @@ class ProvisioningPlan
     /**
      * Add a supervisor with the given options.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Vzool\Horizon\SupervisorOptions  $options
      * @return void
      */
     protected function add(SupervisorOptions $options)
@@ -146,7 +146,7 @@ class ProvisioningPlan
      *
      * @param  string  $supervisor
      * @param  array  $options
-     * @return \Laravel\Horizon\SupervisorOptions
+     * @return \Vzool\Horizon\SupervisorOptions
      */
     protected function convert($supervisor, $options)
     {

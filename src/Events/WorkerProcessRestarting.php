@@ -1,22 +1,22 @@
 <?php
 
-namespace Laravel\Horizon\Events;
+namespace Vzool\Horizon\Events;
 
-use Laravel\Horizon\WorkerProcess;
+use Vzool\Horizon\WorkerProcess;
 
 class WorkerProcessRestarting
 {
     /**
      * The worker process instance.
      *
-     * @var \Laravel\Horizon\WorkerProcess
+     * @var \Vzool\Horizon\WorkerProcess
      */
     public $process;
 
     /**
      * Create a new event instance.
      *
-     * @param  \Laravel\Horizon\WorkerProcess  $process
+     * @param  \Vzool\Horizon\WorkerProcess  $process
      * @return void
      */
     public function __construct(WorkerProcess $process)

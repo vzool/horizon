@@ -1,9 +1,9 @@
 <?php
 
-namespace Laravel\Horizon\Notifications;
+namespace Vzool\Horizon\Notifications;
 
 use Illuminate\Notifications\Messages\MailMessage;
-use Laravel\Horizon\Horizon;
+use Vzool\Horizon\Horizon;
 use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use Illuminate\Notifications\Messages\NexmoMessage;

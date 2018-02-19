@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\ProvisioningPlan;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Vzool\Horizon\MasterSupervisor;
+use Vzool\Horizon\ProvisioningPlan;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\MasterSupervisorCommands\AddSupervisor;
 
 class ProvisioningPlanTest extends IntegrationTest
 {

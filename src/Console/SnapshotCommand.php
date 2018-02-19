@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Console;
+namespace Vzool\Horizon\Console;
 
-use Laravel\Horizon\Lock;
+use Vzool\Horizon\Lock;
 use Illuminate\Console\Command;
-use Laravel\Horizon\Contracts\MetricsRepository;
+use Vzool\Horizon\Contracts\MetricsRepository;
 
 class SnapshotCommand extends Command
 {

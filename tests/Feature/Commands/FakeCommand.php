@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Commands;
+namespace Vzool\Horizon\Tests\Feature\Commands;
 
-use Laravel\Horizon\Supervisor;
+use Vzool\Horizon\Supervisor;
 
 class FakeCommand
 {

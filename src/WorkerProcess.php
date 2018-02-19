@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 use Closure;
 use Cake\Chronos\Chronos;
 use Symfony\Component\Process\Process;
-use Laravel\Horizon\Events\UnableToLaunchProcess;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
+use Vzool\Horizon\Events\UnableToLaunchProcess;
+use Vzool\Horizon\Events\WorkerProcessRestarting;
 
 class WorkerProcess
 {

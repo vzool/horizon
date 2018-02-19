@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
 use Mockery;
-use Laravel\Horizon\Exec;
-use Laravel\Horizon\ProcessInspector;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Contracts\MasterSupervisorRepository;
+use Vzool\Horizon\Exec;
+use Vzool\Horizon\ProcessInspector;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Contracts\SupervisorRepository;
+use Vzool\Horizon\Contracts\MasterSupervisorRepository;
 
 class ProcessInspectorTest extends IntegrationTest
 {

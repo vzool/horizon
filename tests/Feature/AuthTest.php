@@ -1,10 +1,10 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Horizon;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Http\Middleware\Authenticate;
+use Vzool\Horizon\Horizon;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Http\Middleware\Authenticate;
 
 class AuthTest extends IntegrationTest
 {

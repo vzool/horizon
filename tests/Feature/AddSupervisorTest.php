@@ -1,13 +1,13 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\PhpBinary;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\MasterSupervisorCommands\AddSupervisor;
+use Vzool\Horizon\PhpBinary;
+use Vzool\Horizon\MasterSupervisor;
+use Vzool\Horizon\SupervisorOptions;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Contracts\HorizonCommandQueue;
+use Vzool\Horizon\MasterSupervisorCommands\AddSupervisor;
 
 class AddSupervisorTest extends IntegrationTest
 {

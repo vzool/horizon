@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Vzool\Horizon\Listeners;
 
-use Laravel\Horizon\Stopwatch;
-use Laravel\Horizon\Events\JobReserved;
+use Vzool\Horizon\Stopwatch;
+use Vzool\Horizon\Events\JobReserved;
 
 class StartTimingJob
 {
     /**
      * The stopwatch instance.
      *
-     * @var \Laravel\Horizon\Stopwatch
+     * @var \Vzool\Horizon\Stopwatch
      */
     public $watch;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Stopwatch  $watch
+     * @param  \Vzool\Horizon\Stopwatch  $watch
      * @return void
      */
     public function __construct(Stopwatch $watch)
@@ -28,7 +28,7 @@ class StartTimingJob
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobReserved  $event
+     * @param  \Vzool\Horizon\Events\JobReserved  $event
      * @return void
      */
     public function handle(JobReserved $event)

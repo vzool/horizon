@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Vzool\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobPushed;
-use Laravel\Horizon\Contracts\TagRepository;
+use Vzool\Horizon\Events\JobPushed;
+use Vzool\Horizon\Contracts\TagRepository;
 
 class StoreMonitoredTags
 {
     /**
      * The tag repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\TagRepository
+     * @var \Vzool\Horizon\Contracts\TagRepository
      */
     public $tags;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\TagRepository  $tags
+     * @param  \Vzool\Horizon\Contracts\TagRepository  $tags
      * @return void
      */
     public function __construct(TagRepository $tags)
@@ -28,7 +28,7 @@ class StoreMonitoredTags
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobPushed  $event
+     * @param  \Vzool\Horizon\Events\JobPushed  $event
      * @return void
      */
     public function handle(JobPushed $event)

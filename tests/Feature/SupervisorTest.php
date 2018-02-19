@@ -1,26 +1,26 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
 use Mockery;
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\PhpBinary;
-use Laravel\Horizon\AutoScaler;
-use Laravel\Horizon\Supervisor;
+use Vzool\Horizon\PhpBinary;
+use Vzool\Horizon\AutoScaler;
+use Vzool\Horizon\Supervisor;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\MasterSupervisor;
-use Laravel\Horizon\SupervisorOptions;
-use Laravel\Horizon\WorkerCommandString;
-use Laravel\Horizon\SystemProcessCounter;
-use Laravel\Horizon\Tests\IntegrationTest;
-use Laravel\Horizon\Contracts\JobRepository;
-use Laravel\Horizon\SupervisorCommands\Scale;
+use Vzool\Horizon\MasterSupervisor;
+use Vzool\Horizon\SupervisorOptions;
+use Vzool\Horizon\WorkerCommandString;
+use Vzool\Horizon\SystemProcessCounter;
+use Vzool\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Contracts\JobRepository;
+use Vzool\Horizon\SupervisorCommands\Scale;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\SupervisorRepository;
-use Laravel\Horizon\Events\WorkerProcessRestarting;
+use Vzool\Horizon\Contracts\HorizonCommandQueue;
+use Vzool\Horizon\Contracts\SupervisorRepository;
+use Vzool\Horizon\Events\WorkerProcessRestarting;
 
 class SupervisorTest extends IntegrationTest
 {

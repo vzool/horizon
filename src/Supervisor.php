@@ -1,18 +1,18 @@
 <?php
 
-namespace Laravel\Horizon;
+namespace Vzool\Horizon;
 
 use Closure;
 use Exception;
 use Throwable;
 use Cake\Chronos\Chronos;
-use Laravel\Horizon\Contracts\Pausable;
-use Laravel\Horizon\Contracts\Terminable;
-use Laravel\Horizon\Contracts\Restartable;
-use Laravel\Horizon\Events\SupervisorLooped;
+use Vzool\Horizon\Contracts\Pausable;
+use Vzool\Horizon\Contracts\Terminable;
+use Vzool\Horizon\Contracts\Restartable;
+use Vzool\Horizon\Events\SupervisorLooped;
 use Illuminate\Contracts\Debug\ExceptionHandler;
-use Laravel\Horizon\Contracts\HorizonCommandQueue;
-use Laravel\Horizon\Contracts\SupervisorRepository;
+use Vzool\Horizon\Contracts\HorizonCommandQueue;
+use Vzool\Horizon\Contracts\SupervisorRepository;
 use Symfony\Component\Debug\Exception\FatalThrowableError;
 
 class Supervisor implements Pausable, Restartable, Terminable
@@ -27,7 +27,7 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * The SupervisorOptions that should be utilized.
      *
-     * @var \Laravel\Horizon\SupervisorOptions
+     * @var \Vzool\Horizon\SupervisorOptions
      */
     public $options;
 
@@ -69,7 +69,7 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * Create a new supervisor instance.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
+     * @param  \Vzool\Horizon\SupervisorOptions  $options
      * @return void
      */
     public function __construct(SupervisorOptions $options)
@@ -122,8 +122,8 @@ class Supervisor implements Pausable, Restartable, Terminable
     /**
      * Create a new process pool with the given options.
      *
-     * @param  \Laravel\Horizon\SupervisorOptions  $options
-     * @return \Laravel\Horizon\ProcessPool
+     * @param  \Vzool\Horizon\SupervisorOptions  $options
+     * @return \Vzool\Horizon\ProcessPool
      */
     protected function createProcessPool(SupervisorOptions $options)
     {

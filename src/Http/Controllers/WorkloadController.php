@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\Http\Controllers;
+namespace Vzool\Horizon\Http\Controllers;
 
-use Laravel\Horizon\Contracts\WorkloadRepository;
+use Vzool\Horizon\Contracts\WorkloadRepository;
 
 class WorkloadController extends Controller
 {
     /**
      * Get the current queue workload for the application.
      *
-     * @param  \Laravel\Horizon\Contracts\WorkloadRepository  $workload
+     * @param  \Vzool\Horizon\Contracts\WorkloadRepository  $workload
      * @return array
      */
     public function index(WorkloadRepository $workload)

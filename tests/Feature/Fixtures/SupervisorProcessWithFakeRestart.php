@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature\Fixtures;
+namespace Vzool\Horizon\Tests\Feature\Fixtures;
 
-use Laravel\Horizon\SupervisorProcess;
+use Vzool\Horizon\SupervisorProcess;
 
 class SupervisorProcessWithFakeRestart extends SupervisorProcess
 {

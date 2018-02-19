@@ -1,15 +1,15 @@
 <?php
 
-namespace Laravel\Horizon\SupervisorCommands;
+namespace Vzool\Horizon\SupervisorCommands;
 
-use Laravel\Horizon\Contracts\Restartable;
+use Vzool\Horizon\Contracts\Restartable;
 
 class Restart
 {
     /**
      * Process the command.
      *
-     * @param  \Laravel\Horizon\Contracts\Restartable  $restartable
+     * @param  \Vzool\Horizon\Contracts\Restartable  $restartable
      * @return void
      */
     public function process(Restartable $restartable)

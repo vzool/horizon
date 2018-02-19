@@ -1,12 +1,12 @@
 <?php
 
-namespace Laravel\Horizon\Tests\Feature;
+namespace Vzool\Horizon\Tests\Feature;
 
-use Laravel\Horizon\Jobs\MonitorTag;
+use Vzool\Horizon\Jobs\MonitorTag;
 use Illuminate\Support\Facades\Queue;
 use Illuminate\Support\Facades\Redis;
-use Laravel\Horizon\Jobs\RetryFailedJob;
-use Laravel\Horizon\Tests\IntegrationTest;
+use Vzool\Horizon\Jobs\RetryFailedJob;
+use Vzool\Horizon\Tests\IntegrationTest;
 
 class RetryJobTest extends IntegrationTest
 {

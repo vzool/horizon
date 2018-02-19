@@ -1,23 +1,23 @@
 <?php
 
-namespace Laravel\Horizon\Listeners;
+namespace Vzool\Horizon\Listeners;
 
-use Laravel\Horizon\Events\JobPushed;
-use Laravel\Horizon\Contracts\JobRepository;
+use Vzool\Horizon\Events\JobPushed;
+use Vzool\Horizon\Contracts\JobRepository;
 
 class StoreJob
 {
     /**
      * The job repository implementation.
      *
-     * @var \Laravel\Horizon\Contracts\JobRepository
+     * @var \Vzool\Horizon\Contracts\JobRepository
      */
     public $jobs;
 
     /**
      * Create a new listener instance.
      *
-     * @param  \Laravel\Horizon\Contracts\JobRepository  $jobs
+     * @param  \Vzool\Horizon\Contracts\JobRepository  $jobs
      * @return void
      */
     public function __construct(JobRepository $jobs)
@@ -28,7 +28,7 @@ class StoreJob
     /**
      * Handle the event.
      *
-     * @param  \Laravel\Horizon\Events\JobPushed  $event
+     * @param  \Vzool\Horizon\Events\JobPushed  $event
      * @return void
      */
     public function handle(JobPushed $event)

@@ -1,8 +1,8 @@
 <?php
 
-namespace Laravel\Horizon\Contracts;
+namespace Vzool\Horizon\Contracts;
 
-use Laravel\Horizon\Supervisor;
+use Vzool\Horizon\Supervisor;
 
 interface SupervisorRepository
 {
@@ -46,7 +46,7 @@ interface SupervisorRepository
     /**
      * Update the information about the given supervisor process.
      *
-     * @param  \Laravel\Horizon\Supervisor  $supervisor
+     * @param  \Vzool\Horizon\Supervisor  $supervisor
      * @return void
      */
     public function update(Supervisor $supervisor);
