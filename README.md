@@ -13,6 +13,85 @@ Horizon provides a beautiful dashboard and code-driven configuration for your La
 
 All of your worker configuration is stored in a single, simple configuration file, allowing your configuration to stay in source control where your entire team can collaborate.
 
+## Setup
+
+1. Install by composer (required *PHP 7.1+*)
+
+```bash
+composer require vzool/horizon
+```
+
+2. Add the following to `config/app.php` 
+```php
+    'providers' => [
+        
+        // ..
+        
+        Vzool\Horizon\HorizonServiceProvider::class,
+    ],
+    'aliases' => [
+        
+        // ..
+        
+        "Horizon" => Vzool\Horizon\Horizon::class,
+    ]
+```
+
+3. Do `artisan` command
+
+```bash
+
+php artisan vendor:publish
+
+```
+
+4. Add the follow to `app\Providers\AppServiceProvider.php` in order to secure `/horizon` end point.
+
+```php
+<?php
+
+namespace App\Providers;
+
+// ..
+
+use Vzool\Horizon\Horizon;
+
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        // ..
+
+        // Add Horizon authentication [IGNORE IN DEV]
+        
+        Horizon::auth(function ($request) {
+        
+            // allow admins  only to see this page 
+            // return \Auth::user()->is_admin;
+            // or return any true / false
+        });
+    }
+
+    /**
+     * Register any application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        //
+    }
+}
+
+```
+
+5. Browse `/horizon` and have fun with your X-Ray Vision. ;)
+
 ## Official Documentation
 
 Documentation for Horizon can be found on the [Laravel website](http://laravel.com/docs/master/horizon).
