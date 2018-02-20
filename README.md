@@ -23,18 +23,18 @@ composer require vzool/horizon
 
 2. Add the following to `config/app.php` 
 ```php
-    'providers' => [
-        
-        // ..
-        
-        Vzool\Horizon\HorizonServiceProvider::class,
-    ],
-    'aliases' => [
-        
-        // ..
-        
-        "Horizon" => Vzool\Horizon\Horizon::class,
-    ]
+'providers' => [
+
+    // ..
+
+    Vzool\Horizon\HorizonServiceProvider::class,
+],
+'aliases' => [
+
+    // ..
+
+    "Horizon" => Vzool\Horizon\Horizon::class,
+]
 ```
 
 3. Do `artisan` command
