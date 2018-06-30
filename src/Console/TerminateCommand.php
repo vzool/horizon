@@ -4,7 +4,7 @@ namespace Vzool\Horizon\Console;
 
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Illuminate\Support\InteractsWithTime;
+use Illuminate\Queue\InteractsWithTime;
 use Vzool\Horizon\MasterSupervisor;
 use Vzool\Horizon\Contracts\MasterSupervisorRepository;
 
