@@ -51,7 +51,7 @@ class MonitoringController extends Controller
                 'tag' => $tag,
                 'count' => $this->tags->count($tag) + $this->tags->count('failed:'.$tag),
             ];
-        })->sortBy('tag')->values();
+        })->sortBy('tag')->values()->toArray();
     }
 
     /**
